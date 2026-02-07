@@ -31,4 +31,49 @@ The admin starts at Branch 3 and follows the shortest path to ensure all Opportu
 
 The total distance traversed is 10 edges.
 
-![photo_2026-02-07_18-44-49](https://github.com/user-attachments/assets/fe78cede-aff4-4460-949b-bde3a8e8ceca)
+![photo_2026-02-07_18-44-49](https://github.com/user-attachments/assets/fe78cede-aff4-4460-949b-bde3a8e8ceca) 
+
+🧠 **Approach Overview**
+
+The branch hierarchy is modeled as an undirected tree using an adjacency list.
+
+Each node represents a branch, and edges represent connections between branches.
+
+🔹 **Step 1: Prune Useless Leaves**
+
+Identify all leaf nodes without opportunity data.
+
+Remove these nodes iteratively since they do not contribute to data collection.
+
+This step reduces the tree to only the necessary branches.
+
+🔹 **Step 2: Remove Two Outer Layers**
+
+After pruning, collect the remaining leaf nodes.
+
+Remove two layers of leaves to optimize traversal and avoid redundant paths.
+
+This simulates the most efficient way to collect data from the outer branches.
+
+🔹 **Step 3: Calculate Traversal Cost**
+
+Count the edges remaining in the reduced tree.
+
+Each edge must be traversed twice (forward and backward).
+
+Final result = remaining_edges × 2.
+
+⚙️ **Key Ideas**
+
+Tree pruning using BFS
+
+Leaf node elimination
+
+Greedy optimization
+
+Efficient edge traversal
+
+⏱ **Complexity**
+
+Time: O(N)
+Space: O(N)
