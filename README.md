@@ -9,7 +9,7 @@ To gather all Opportunity data, the admin must navigate through the branches usi
 
 Determine the minimum number of edges the admin needs to traverse to collect all Opportunity data.
 
-Test Case 
+**Test Case :** 
 ```
 branch_nodes = 12
 
@@ -19,10 +19,11 @@ branch_from = [0, 1, 2, 3, 4, 5, 6, 8, 3, 9, 10]
 branch_to   = [1, 2, 3, 4, 5, 6, 7, 7, 9, 10, 11]
 ```
 
-Output 
+**Output:=**
+
 10
 
-Explanation
+**Explanation :**
 
 Branches 2, 6, and 9 serve as optimal points for collecting all data.
 
